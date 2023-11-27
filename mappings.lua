@@ -32,6 +32,7 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    opts.mapping["<C-x>"] = cmp.mapping.select_next_item()
   },
   t = {
     -- setting a mapping to false will disable it
